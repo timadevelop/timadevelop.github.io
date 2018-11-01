@@ -92,11 +92,24 @@ class App extends Component {
                             <a href="https://twitter.com/teemofeev" target="_blank" rel="noopener noreferrer">twitter</a>
                             <a href="https://github.com/timadevelop" target="_blank" rel="noopener noreferrer">github</a>
                         </div>
+
+                            <div className="hide-md flex-row">
+                                <p>Made with</p>
+                                {/* <svg className="spin" width="30" height="23">
+                                    <polygon style={"stroke-linejoin:miter; stroke:black; stroke-width:5; fill: red;"}
+                                points={"100 100, 150 150, 200 100, 200 75, 185 60, 165 60, 150 75, 135 60, 115 60, 100 75, 100 100"} />
+                                </svg> */}
+                                <svg className="heart" viewBox="0 0 32 32">
+                                    <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                                        c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+                                </svg> 
+                                <p> in Ukraine</p>
+                            </div>
                         
                     </div>
                     <footer className="footer">
                             <div></div>
-                            <div>
+                            <div className="show-md flex-row">
                                 <p>Made with</p>
                                 {/* <svg className="spin" width="30" height="23">
                                     <polygon style={"stroke-linejoin:miter; stroke:black; stroke-width:5; fill: red;"}

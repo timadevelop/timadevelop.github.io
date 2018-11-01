@@ -103,6 +103,9 @@ a {
                     background-repeat: no-repeat;
                     transition: all 1s ease;                
             }
+            .flex-row {
+                margin-top: 50px;
+            }
         }
         .footer {
             display:flex;
@@ -115,16 +118,8 @@ a {
                 justify-content: flex-end;
                 flex-direction: row;
                 align-items: flex-end;
-
                 svg.heart {
-                    width: 15px;
-                    height: 15px;
-                    fill: $red;
-                    opacity: .7;
                     margin: 7px 10px;
-                    &:hover {
-                        opacity: 1;
-                    }
                 }
             }
         }
@@ -136,6 +131,24 @@ a {
     }
 }
 
+.flex-row {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+}
+
+svg.heart {
+    width: 15px;
+    height: 15px;
+    fill: $red;
+    opacity: .7;
+    margin: 7px 10px;
+    margin-bottom: 0;
+    &:hover {
+        opacity: 1;
+    }
+}
 .scrollable {
     display: block;
     position: relative;
@@ -158,6 +171,11 @@ a {
     }
 }
 
+
+.hide-md {
+    display: none !important;
+}
+
 @media (max-width: 400px) {
     .App {
         .footer {
@@ -166,7 +184,13 @@ a {
             flex-direction: column;
             align-items: center;
         }
-    } 
+    }
+    .hide-md {
+        display: flex !important;
+    }
+    .show-md {
+        display: none !important;
+    }
 }
 
 @media (max-width: 350px) {
