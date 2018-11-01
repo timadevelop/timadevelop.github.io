@@ -81,7 +81,7 @@ class App extends Component {
                     </header>
                     <div className={"centerContent " + this.state.filterClass} style={this.state.contentStyle} >
                         <h1 style={this.state.h1Style} className="zlitch">Vlad Timofeev</h1>
-                        <p>in adventure of <a href="https://brainhub.co/" target="_blank" rel="noopener noreferrer">tech</a>, <a href="https://brainhub.co/#!/projects/gr" target="_blank" rel="noopener noreferrer">gadgets</a> and <a href="/">cars</a>.</p>
+                        <p>in the adventure about <a href="https://brainhub.co/" target="_blank" rel="noopener noreferrer">tech</a>, <a href="https://brainhub.co/#!/projects/gr" target="_blank" rel="noopener noreferrer">gadgets</a>, and <a href="/">cars</a>.</p>
                         <div className="socialLinks">
                             <a href="https://www.facebook.com/teemofeev" target="_blank" rel="noopener noreferrer">facebook</a>
                             <a href="mailto:timadevelop@gmail.com" target="_blank" rel="noopener noreferrer">gmail</a>
