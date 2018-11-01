@@ -54,11 +54,15 @@ class App extends Component {
     componentDidMount = () => {
         // onhover link grayscale background
         [...document.querySelectorAll('a')].forEach(el => {
-          el.onmouseenter = this.blurBackground.bind(this)
-          el.onmouseleave = this.unblurBackground.bind(this)
+            el.onmouseenter = this.blurBackground.bind(this)
+            el.onmouseleave = this.unblurBackground.bind(this)
+            el.touchstart = this.blurBackground.bind(this)
+            el.touchend = this.unblurBackground.bind(this)
+            el.touchcancel = this.unblurBackground.bind(this)
         });
 
         document.onmousemove = (e) => {this.setContainerBackgroundColor(e)};
+        document.touchmove = (e) => {this.setContainerBackgroundColor(e)};
     }
 
     render() {
