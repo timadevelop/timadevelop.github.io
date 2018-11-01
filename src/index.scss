@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Karla", "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     // font-family: 'Karla';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -13,9 +13,9 @@ code {
     opacity: 0.95;
 }
 
-a {
+* {
     color: white;
-    &:hover {
-        text-decoration: underline;
-    }
+    margin: 0;
+    padding: 0;
+
 }
