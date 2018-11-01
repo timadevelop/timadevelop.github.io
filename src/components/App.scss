@@ -12,10 +12,12 @@ a , p {
     text-decoration: none;
 }
 p {
-        font-weight: 250;
+    font-weight: 300;
+    color: rgba(255, 255, 255, .7);
     a {
         font-weight: normal;
         margin: 0 2px;
+        color: rgba(255, 255, 255, 1);
     }
 }
 // p:has(> `a) {
